@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px;
+}
+nav{
+    margin: 10px 15px;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: rgb(135, 203, 240);
+}
+nav li{
+    padding: 10px;
+}
+/* ანქორზე დეფაულტ დეკორაციის წაშლა */
+a{
+    text-decoration: none;
+}
+/* hover ეფექტი რომელიც გამოჩნდება კურსორის მიტანით მხოლოდ */
+a:hover{
+    background-color: orange;
+    text-decoration: underline;
+}
+/* სურათის პარამეტრები */
+img{
+    height: 150px;
+    border:2px solid black;
+    border-radius: 50%;
+}
+/* h2 სტილის შეცვლა */
+h2{
+    font-size: 24px;
+    text-decoration: underline;
+}
+/* h3 სტილის შეცვლა */
+h3{
+    font-size:20px;
+    color: darkgreen;
+}
+/* მშობელი ელემენტი ID .projects რომელსაც ყავს შვილობილი მისი სტილის შეცვლა */
+section#projects h3 {
+    font-size: 30px;
+    color: blue;
+}
+/* პარაგრაფის პარამეტრები */
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+.project1{
+    background-color: bisque;
+    border-style: solid;
+    padding: 10px 5px 5px 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.project2{
+    background-color: rgba(122, 149, 126, 0.337);
+    text-align: center;
+    border-style: dashed;
+    margin: 10px;
+}
+.project2 h3{
+    text-align: left;
+}
+.project3{
+    text-align: center;
+    background-color: rgb(204, 196, 184);
+    border-style: dotted;
+    margin: 10px;
+}
+.project3 h3{
+    text-align: left;
+}
+#about{
+    background-color: lightgray;
+    text-align: center;
+}
+#skills{
+    background-color: lightyellow;
+    border-radius: 10px;
+}
+li{
+    list-style: none;
+    color:darkred;
+}
+/* before პარამეტრის გამოყენების მაგალითი */
+#skills li::before {
+    content: "⭐ ";
+  }
+#skills h2{
+    text-align: center;
+}
+.testimonial-content img {
+    height: 80px;
+    float: left;
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(95, 103, 103);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.testimonial-content :last-child p{
+   padding-left: 10px;
+}
